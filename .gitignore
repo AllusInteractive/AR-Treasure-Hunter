@@ -1,0 +1,13 @@
+AR*Treasure*Hunter/[Ll]ibrary/
+AR*Treasure*Hunter/[Tt]emp/
+AR*Treasure*Hunter/[Oo]bj/
+AR*Treasure*Hunter/[Bb]uild/
+AR*Treasure*Hunter/[Bb]uilds/
+AR*Treasure*Hunter/[Ll]ogs/
+AR*Treasure*Hunter/[Mm]emoryCaptures/
+
+# Never ignore Asset meta data
+!AR*Treasure*Hunter/[Aa]ssets/**/*.meta
+
+#TextMesh Pro files
+AR*Treasure*Hunter/[Aa]ssets/TextMesh*Pro/
