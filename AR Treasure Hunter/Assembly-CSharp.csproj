@@ -56,6 +56,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Portal.cs" />
+     <None Include="Assets\Shaders\PortalRoom.shader" />
+     <None Include="Assets\Shaders\Standard.shader" />
      <None Include="Assets\Shaders\PotalDoor.shader" />
      <None Include="Assets\Shaders\StencilTest.shader" />
  <Reference Include="Unity.Timeline.Editor">
