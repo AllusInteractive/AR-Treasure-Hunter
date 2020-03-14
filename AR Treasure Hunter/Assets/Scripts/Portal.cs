@@ -23,7 +23,7 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerStay(Collider collider)
     {
-        if (collider.name != "Main Camera")
+        if (collider.tag != "MainCamera")
         {
             return;
         }
