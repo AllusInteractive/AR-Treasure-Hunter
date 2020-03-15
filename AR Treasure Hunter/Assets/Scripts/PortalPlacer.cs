@@ -19,11 +19,6 @@ public class PortalPlacer : MonoBehaviour
     {
         m_ARRaycastManager = GetComponent<ARRaycastManager>();
     }
-
-    void Start()
-    {
-        
-    }
     
     void Update()
     {
@@ -40,12 +35,27 @@ public class PortalPlacer : MonoBehaviour
                 if (spawnedPortal == null)
                 {
                     spawnedPortal = Instantiate(portal, pose.position, Quaternion.Euler(0, 0, 0));
+
+                    // TODO: move following lines to private function SetPortalRotation()
+
+                    var rotationOfPortal = spawnedPortal.transform.rotation.eulerAngles;
+
+                    spawnedPortal.transform.eulerAngles = new Vector3(rotationOfPortal.x, Camera.main.transform.eulerAngles.y, rotationOfPortal.z);
                 }
                 else
                 {
                     spawnedPortal.transform.position = pose.position;
+
+                    var rotationOfPortal = spawnedPortal.transform.rotation.eulerAngles;
+
+                    spawnedPortal.transform.eulerAngles = new Vector3(rotationOfPortal.x, Camera.main.transform.eulerAngles.y, rotationOfPortal.z);
                 }
             }
         }
     }
+    /*
+    private void SetPortalRotation(gameObject portal)
+    {
+
+    }*/
 }
