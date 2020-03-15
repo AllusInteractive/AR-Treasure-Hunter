@@ -8,6 +8,7 @@ public class Menu : MonoBehaviour
     // Build Index:
     // 0 - Menu
     // 1 - Basic Portal Scene
+    // 2 - Castle Portal Scene
 
     public void GoToMenu()
     {
@@ -17,6 +18,11 @@ public class Menu : MonoBehaviour
     public void GoToBasicPortalScene()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void GoToCastlePortalScene()
+    {
+        SceneManager.LoadScene(2);
     }
 
     public void QuitGame()

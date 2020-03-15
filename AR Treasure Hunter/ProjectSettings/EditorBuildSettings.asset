@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BasicPortal.unity
     guid: ffe406a31e0890b4db90a51af11edaa3
+  - enabled: 1
+    path: Assets/Scenes/CastlePortal.unity
+    guid: bd31fa89260a9d440847013508b21c55
   m_configObjects: {}
